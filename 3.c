@@ -12,12 +12,12 @@ int main()
     int n,i,j,k=0;
     scanf("%d",&n);
     int a[n*n];
-    for(i=1;i<n*n+3;i++,k++)
+    for(i=1;i<n*n*2;i++,k++)
     {
         j=isUgly(i);
-        if(j==1)
+        /*if(j==1)
             a[k]=i;
-        else
+        else*/
             k--;
     }
     printf("%d",a[n-1]);
